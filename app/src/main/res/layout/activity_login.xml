@@ -8,8 +8,17 @@
     tools:context=".LoginActivity"
     android:orientation="vertical">
 
-
-
+    <EditText
+        android:id="@+id/txt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_username"
+        android:Id="@+id/login"
+        android:imeActionLabel="@string/action_sign_in_short"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"/>
 
     <EditText
         android:id="@+id/password"
@@ -20,8 +29,8 @@
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionUnspecified"
         android:inputType="textPassword"
-        android:maxLines="1" android:singleLine="true"/>
-
+        android:maxLines="1"
+        android:singleLine="true"/>
 
     <Button
         android:id="@+id/email_sign_in_button"
@@ -30,11 +39,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="SIGN IN"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"/>
 
-    <Button android:id="@+id/btn_back"
+    <Button
+        android:id="@+id/btn_back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Back"/>
+        android:text="Back"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"/>
 
 </LinearLayout>
